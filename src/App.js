@@ -1040,7 +1040,7 @@ export default function App() {
           active={active} setActive={setActive}
           history={history} selectedPatient={selectedPatient}
           onSelectPatient={setSelectedPatient}
-          onClearKey={() => { localStorage.removeItem(KEY_STORAGE); setApiKey(""); }}
+          onClearKey={() => { localStorage.removeItem(KEY_STORAGE); window.location.reload(); }}
         />
         <div style={{ flex: 1, overflowY: "auto" }}>
           <div style={{ maxWidth: 820, margin: "0 auto", padding: "36px 32px" }}>
