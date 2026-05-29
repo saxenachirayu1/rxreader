@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
-// Backend URL — change this to your Railway URL after deploying
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:4000";
+// On Vercel, API functions live at /api — no separate backend needed
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "";
 const KEY_STORAGE = "rxreader_api_key";
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
